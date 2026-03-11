@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>EWB Lab 2</title>
+    </head>
+<body>
+    <header>
+        <h1>Titlu</h1>
+    </header>
+    <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#">Site</a></li>
+      <li><a href="#">Resurse</a></li>
+    </ul>
+  </nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href ="index.html">home</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  <main id="main-content">
+    <h1>Contact</h1>
+    <section>
+        <form method="post" action="#" aria-label="Forum Contact">
+        <fieldset>
+            <legend>Detaliile tale</legend>
+            <label for="name">Nume Intreg (Camp obligatoriu)</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email (Camp obligatoriu)</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Telefon (Camp Optional)</label>
+            <input type="number" id="phone" name="phone">
+        </fieldset>
+        <fieldset>
+            <legend>Detaliile tale</legend>
+            <label for = "subject">Subiect </label>
+            <input type="text" id="subject" name="subject" required aria-describedby="subject-hint">
+            <p id="subject-hint" class="form-hint">e.g. Mai faceti evaziune fiscala ?</p>
+            <label for="mess">Mesaj </label>
+            <textarea id="mess" name="message" rows="5" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Cum ati auzit de noi ?</legend>
+            <label for="Curs">Facultate</label>
+            <input type="radio" id="Curs" name="hear" value="course">
+            <label for="search">Prin Internet</label>
+            <input type="radio" id="search" name="hear" value="search">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="hear" value="other">
+        </fieldset>
+        <button type="submit">Send message</button>
+        </form>
+    </section>
+    <table border="1">
+        <caption>Messages Received</caption>
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Message</th>
+                <th scope="col" >Date</th>
+                <th scope="col">Priority</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >1</td>
+                <td>Alice</td>
+                <td><a href="#">alice@gmail.com</a></td>
+                <td>Hey! Just finished Lab 1!</td>
+                <td>01.01.2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td rowspan="3">Bob</td>
+                <td rowspan="3"><a href="#">bob@e-uvt.ro</a></td>
+                <td>Hey, how's it going ?</td>
+                <td>09.02.2026</td>
+                <td><input type="checkbox"></td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Do you know tge deadline for Lab 3?!</td>
+                <td>09.02.2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Can someone share the example solution for Lab 2 ?</td>
+                <td>21.02.2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            
+        </tbody>
+    </table>
+  </main>
+</body>
